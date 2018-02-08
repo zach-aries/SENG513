@@ -1,12 +1,6 @@
 # SENG 513 - Assignment 2
 
-
-
-
-
-* * *
-
-### SENG 513 - Assignment 2.getStats(txt) 
+### getStats(txt) 
 
 Gets a list of stats from a text string
 
@@ -17,7 +11,7 @@ Gets a list of stats from a text string
 **Returns**: `Object`
 
 
-### SENG 513 - Assignment 2.getNLines(string) 
+### getNLines(string) 
 
 Returns the numbers of lines in a string
 
@@ -33,7 +27,7 @@ The string "\n" contains 2 lines.
 **Returns**: `number`
 
 
-### SENG 513 - Assignment 2.getNNonEmptyLines(string) 
+### getNNonEmptyLines(string) 
 
 Returns the number of lines in the text containing at
 least one visible character. A character as any character
@@ -46,7 +40,7 @@ other than whitespace (space, new-line and tab).
 **Returns**: `number`
 
 
-### SENG 513 - Assignment 2.getMaxLineLength(string) 
+### getMaxLineLength(string) 
 
 Returns length of the longest line. Line length will be computed by
 counting the number of characters in the line, including any trailing
@@ -59,7 +53,7 @@ white spaces, but excluding the newline character ‘\n’.
 **Returns**: `number`
 
 
-### SENG 513 - Assignment 2.calcAvgWordLength(string) 
+### calcAvgWordLength(string) 
 
 Returns average word length in a string
 Example: text “Hello, World 1!” would have average
@@ -72,7 +66,7 @@ word length equal to (5+5+1)/3 = 3.666666.
 **Returns**: `number`
 
 
-### SENG 513 - Assignment 2.getPalindromes(string) 
+### getPalindromes(string) 
 
 Returns an array of palindromes
 A palindrome is a word with length > 2, which reads the
@@ -85,7 +79,7 @@ same forward and backwards.
 **Returns**: `Array`
 
 
-### SENG 513 - Assignment 2.getLongestWords(string) 
+### getLongestWords(string) 
 
 Returns array of the 10 longest words in string. In case of ties,
 the secondary sorting criteria should be alphabetical sorting.
@@ -98,7 +92,7 @@ Example: “0, XXX, YYYY, AAAA, BBB” will yield a list: [“aaaa”, “yyyy�
 **Returns**: `Array`
 
 
-### SENG 513 - Assignment 2.getMostFrequentWords(string) 
+### getMostFrequentWords(string) 
 
 Returns the 10 most frequent words in the string, concatenated with their respective frequencies.
 Uses alphabetic sorting to to resolve frequency ties. The results will include the corresponding
@@ -113,7 +107,7 @@ should yield: [“and(3)”, “the(3)”, “it(2)”].
 **Returns**: `Array`
 
 
-### SENG 513 - Assignment 2.getWordsFromText(string) 
+### getWordsFromText(string) 
 
 Returns an array of words from a string
 Words contain one or more sequential occurrences of an alphanumeric char
@@ -125,7 +119,7 @@ Words contain one or more sequential occurrences of an alphanumeric char
 **Returns**: `Array | Object | Array`
 
 
-### SENG 513 - Assignment 2.isPalindrom(word) 
+### isPalindrom(word) 
 
 Returns true if a word is a palindrome, false otherwise
 A palindrome is a word with length > 2, which reads the
