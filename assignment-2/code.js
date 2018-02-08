@@ -1,8 +1,6 @@
 /**
- * Created by: Zachary Aries
- * Last Modified: 08/02/2018
- *
- * SENG 513 - Assignment 2
+ * @module SENG 513 - Assignment 2
+ * @author Zachary Aries
  */
 
 

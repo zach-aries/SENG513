@@ -1,17 +1,23 @@
-# SENG 513 W17 Assignment 2
+# SENG 513 - Assignment 2
 
-### getStats(txt) 
+
+
+
+
+* * *
+
+### SENG 513 - Assignment 2.getStats(txt) 
 
 Gets a list of stats from a text string
 
 **Parameters**
 
-**txt**: , Gets a list of stats from a text string
+**txt**: `String`
 
 **Returns**: `Object`
 
 
-### getNLines(string) 
+### SENG 513 - Assignment 2.getNLines(string) 
 
 Returns the numbers of lines in a string
 
@@ -22,17 +28,12 @@ The string "\n" contains 2 lines.
 
 **Parameters**
 
-**string**: , Returns the numbers of lines in a string
-
-The only time this will be ‘0’ is when the text is empty.
-For example, the string "Hello\nWorld" contains 2 lines.
-The string "Hello\nWorld\n" contains 3 lines.
-The string "\n" contains 2 lines.
+**string**: `String`
 
 **Returns**: `number`
 
 
-### getNNonEmptyLines(string) 
+### SENG 513 - Assignment 2.getNNonEmptyLines(string) 
 
 Returns the number of lines in the text containing at
 least one visible character. A character as any character
@@ -40,14 +41,12 @@ other than whitespace (space, new-line and tab).
 
 **Parameters**
 
-**string**: , Returns the number of lines in the text containing at
-least one visible character. A character as any character
-other than whitespace (space, new-line and tab).
+**string**: `String`
 
-**Returns**: `*`
+**Returns**: `number`
 
 
-### getMaxLineLength(string) 
+### SENG 513 - Assignment 2.getMaxLineLength(string) 
 
 Returns length of the longest line. Line length will be computed by
 counting the number of characters in the line, including any trailing
@@ -55,14 +54,12 @@ white spaces, but excluding the newline character ‘\n’.
 
 **Parameters**
 
-**string**: , Returns length of the longest line. Line length will be computed by
-counting the number of characters in the line, including any trailing
-white spaces, but excluding the newline character ‘\n’.
+**string**: `String`
 
 **Returns**: `number`
 
 
-### calcAvgWordLength(string) 
+### SENG 513 - Assignment 2.calcAvgWordLength(string) 
 
 Returns average word length in a string
 Example: text “Hello, World 1!” would have average
@@ -70,14 +67,12 @@ word length equal to (5+5+1)/3 = 3.666666.
 
 **Parameters**
 
-**string**: , Returns average word length in a string
-Example: text “Hello, World 1!” would have average
-word length equal to (5+5+1)/3 = 3.666666.
+**string**: `String`
 
 **Returns**: `number`
 
 
-### getPalindromes(string) 
+### SENG 513 - Assignment 2.getPalindromes(string) 
 
 Returns an array of palindromes
 A palindrome is a word with length > 2, which reads the
@@ -85,14 +80,12 @@ same forward and backwards.
 
 **Parameters**
 
-**string**: , Returns an array of palindromes
-A palindrome is a word with length > 2, which reads the
-same forward and backwards.
+**string**: `String`
 
 **Returns**: `Array`
 
 
-### getLongestWords(string) 
+### SENG 513 - Assignment 2.getLongestWords(string) 
 
 Returns array of the 10 longest words in string. In case of ties,
 the secondary sorting criteria should be alphabetical sorting.
@@ -100,14 +93,12 @@ Example: “0, XXX, YYYY, AAAA, BBB” will yield a list: [“aaaa”, “yyyy�
 
 **Parameters**
 
-**string**: , Returns array of the 10 longest words in string. In case of ties,
-the secondary sorting criteria should be alphabetical sorting.
-Example: “0, XXX, YYYY, AAAA, BBB” will yield a list: [“aaaa”, “yyyy”, ”bbbb”,“xxx”, ”0”].
+**string**: `String`
 
 **Returns**: `Array`
 
 
-### getMostFrequentWords(string) 
+### SENG 513 - Assignment 2.getMostFrequentWords(string) 
 
 Returns the 10 most frequent words in the string, concatenated with their respective frequencies.
 Uses alphabetic sorting to to resolve frequency ties. The results will include the corresponding
@@ -117,29 +108,24 @@ should yield: [“and(3)”, “the(3)”, “it(2)”].
 
 **Parameters**
 
-**string**: , Returns the 10 most frequent words in the string, concatenated with their respective frequencies.
-Uses alphabetic sorting to to resolve frequency ties. The results will include the corresponding
-frequencies appended to the actual words surrounded by brackets.
-Example: the text “The,the,THE,and,AND,and,it,IT”
-should yield: [“and(3)”, “the(3)”, “it(2)”].
+**string**: `String`
 
 **Returns**: `Array`
 
 
-### getWordsFromText(string) 
+### SENG 513 - Assignment 2.getWordsFromText(string) 
 
 Returns an array of words from a string
 Words contain one or more sequential occurrences of an alphanumeric char
 
 **Parameters**
 
-**string**: , Returns an array of words from a string
-Words contain one or more sequential occurrences of an alphanumeric char
+**string**: `String`
 
 **Returns**: `Array | Object | Array`
 
 
-### isPalindrom(word) 
+### SENG 513 - Assignment 2.isPalindrom(word) 
 
 Returns true if a word is a palindrome, false otherwise
 A palindrome is a word with length > 2, which reads the
@@ -147,9 +133,7 @@ same forward and backwards.
 
 **Parameters**
 
-**word**: , Returns true if a word is a palindrome, false otherwise
-A palindrome is a word with length > 2, which reads the
-same forward and backwards.
+**word**: `String`
 
 **Returns**: `boolean`
 
