@@ -1,7 +1,5 @@
 # SENG 513 W17 Assignment 2
 
-* * *
-
 ### getStats(txt) 
 
 Gets a list of stats from a text string
