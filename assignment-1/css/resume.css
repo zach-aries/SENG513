@@ -1,0 +1,20 @@
+.col-md-9 {
+    border-right: solid 1px #9E9B9E;
+    padding-right: 2.4%;
+    margin-right: 2.4%;
+    width: 70%;
+    height: 100%;
+}
+
+.col-md-3 {
+    padding: 0 2.5%;
+    width: 20%;
+}
+
+.col-md-3 h2 {
+    margin-top: 2em;
+}
+
+h3 span {
+    font-weight: normal;
+}

@@ -1,0 +1,137 @@
+
+
+h4 {
+  font-size: 14px;
+  margin: 10px 0 5px;
+  border-bottom: solid 1px;
+}
+
+p {
+  margin-bottom: 4px;
+  margin-top: 0;
+}
+
+.row hr {
+  margin: 4px !important;
+}
+
+button.btn.icon {
+  float: left;
+  height: 30px !important;
+  margin: 0px 5px 0px 5px;
+  padding: 0 !important;
+  width: 30px !important;
+}
+
+#top-bar { opacity: .9; }
+#top-bar label { padding: 0; margin-right: 10px;  margin-top: 3px;}
+
+.value > input {
+  float: none !important;
+  padding: 2px !important;
+  width: 110px !important;
+}
+
+select {
+  width: auto;
+  padding-left: 10px;
+  float: left;
+  clear: none;
+}
+
+button:focus {outline:0;}
+
+button.btn.info {
+  float: left;
+  height: 24px !important;
+  margin: 0px 5px 0px 5px;
+  padding: 0 !important;
+  width: 24px !important;
+}
+
+button.btn.info {
+  background-repeat: no-repeat;
+  background-position-x: 0;
+  background-position-y: 0;
+  background-size: contain;
+}
+button.info.polarPositive { background-image: url('img/angle_pos.png'); }
+button.info.navigator { background-image: url('img/nav.png'); }
+button.info.cartesian { background-image: url('img/cartiesian.png'); }
+
+.value > input {
+  width: 70px!important;
+}
+
+select {
+  font-size: 12px;
+  height: 22px;
+  margin-left: 10px;
+  padding-left: 2px;
+  padding-right: 32px;
+}
+
+.hidden {
+  display: none;
+}
+
+.ball-label {
+  display: block;
+  border-bottom: solid 1px;
+  padding-bottom: 5px!important;
+  margin-bottom: 7px!important;
+  font-weight: bold;
+}
+
+input.disabled {
+  background: #f2f2f2;
+}
+
+input.inputX, input.inputY {
+  width: 75px!important;
+}
+
+.ui-body label {
+  float: none;
+  padding: 0;
+}
+
+.tooltip {
+  width: 200px;
+  left: 10px;
+  top: 10px!important;
+  background: rgba(255,255,255,0.9);
+}
+
+.tooltip p {
+  margin-left: 15px;
+  font-size: 12px;
+}
+
+.tooltip .group {
+  border-left: solid 1px;
+  margin-left: 15px;
+}
+
+#data table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#data table td {
+  padding-left: 9px;
+  vertical-align: top;
+  height: 20px;
+}
+
+tr:nth-child(even) {
+  background-color: #f4f4f4;
+}
+
+.input {
+  width: 100%!important;
+  text-align: left;
+  margin: 5px 0;
+  padding: 3px 5px!important;
+}
+	

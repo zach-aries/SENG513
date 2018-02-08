@@ -1,0 +1,715 @@
+/* 	-webkit-box-sizing: border-box; 	Safari/Chrome, other WebKit	*/
+/*	-moz-box-sizing: border-box;    	Firefox, other Gecko 		*/
+/*	box-sizing: border-box;         	Opera/IE 8+ 				*/
+
+@font-face {
+	font-family: 'adlc_arrows';
+	src: url('../fonts/adlc_arrows.eot?45962692');
+	src: url('../fonts/adlc_arrows.eot?45962692#iefix') format('embedded-opentype'),
+	url('../fonts/adlc_arrows.woff2?45962692') format('woff2'),
+	url('../fonts/adlc_arrows.woff?45962692') format('woff'),
+	url('../fonts/adlc_arrows.ttf?45962692') format('truetype'),
+	url('../fonts/adlc_arrows.svg?45962692#adlc_arrows') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'adlc_arrows';
+    src: url('../font/adlc_arrows.svg?45962692#adlc_arrows') format('svg');
+  }
+}
+*/
+
+[class^="icon-"]:before, [class*=" icon-"]:before {
+	font-family: "adlc_arrows";
+	font-style: normal;
+	font-weight: normal;
+	speak: none;
+
+	display: inline-block;
+	text-decoration: inherit;
+	width: 1em;
+	margin-right: .2em;
+	text-align: center;
+	/* opacity: .8; */
+
+	/* For safety - reset parent styles, that can break glyph codes*/
+	font-variant: normal;
+	text-transform: none;
+
+	/* fix buttons height, for twitter bootstrap */
+	line-height: 1em;
+
+	/* Animation center compensation - margins should be symmetric */
+	/* remove if not needed */
+	margin-left: .2em;
+
+	/* you can be more comfortable with increased icons size */
+	/* font-size: 120%; */
+
+	/* Font smoothing. That was taken from TWBS */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
+	/* Uncomment for 3D effect */
+	/* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.icon-down-open:before { content: '\e800'; }
+.icon-left-open:before { content: '\e801'; }
+.icon-right-open:before { content: '\e802'; }
+.icon-up-open:before { content: '\e803'; }
+.icon-down:before { content: '\e804'; }
+.icon-left:before { content: '\e805'; }
+.icon-right:before { content: '\e806'; }
+.icon-up:before { content: '\e807'; }
+.icon-down-big:before { content: '\e808'; }
+.icon-left-big:before { content: '\e809'; }
+.icon-right-big:before { content: '\e80a'; }
+.icon-up-big:before { content: '\e80b'; }
+.icon-down-bold:before { content: '\e80c'; }
+.icon-left-bold:before { content: '\e80d'; }
+.icon-right-bold:before { content: '\e80e'; }
+.icon-up-bold:before { content: '\e80f'; }
+.icon-down-fat:before { content: '\e810'; }
+.icon-left-fat:before { content: '\e811'; }
+.icon-right-fat:before { content: '\e812'; }
+.icon-up-fat:before { content: '\e813'; }
+.icon-down-thin:before { content: '\e814'; }
+.icon-left-thin:before { content: '\e815'; }
+.icon-right-thin:before { content: '\e816'; }
+.icon-up-thin:before { content: '\e817'; }
+.icon-down-1:before { content: '\e818'; }
+.icon-left-1:before { content: '\e819'; }
+.icon-right-1:before { content: '\e81a'; }
+.icon-up-1:before { content: '\e81b'; }
+.icon-down-2:before { content: '\e81c'; }
+.icon-up-2:before { content: '\e81d'; }
+
+/* REQUIRED BODY ELEMENT STYLES */
+
+body { font-family: Helvetica, Arial, sans-serif; }
+
+footer {
+	background: rgb(54, 54, 54) none repeat scroll 0 0;
+	color: #fff;
+	margin-top: 50px;
+	padding: 25px;
+	text-align: center;
+}
+
+.ui-body {
+	width: 100%;
+	color: #4e5f71;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 14px;
+}
+
+#int-wrp {
+	background: #dfdfe7;
+	border: 1px solid #e7e7e7;
+	display: block;
+	height: 600px;
+	margin: 75px auto;
+	width: 750px;
+	overflow: hidden;
+	position: relative;
+}
+
+/* clearfix */
+.group:after {
+	visibility: hidden;
+	display: block;
+	content: "";
+	clear: both;
+	height: 0;
+}
+
+* html .group { zoom: 1; }
+
+/* IE6 */
+*:first-child + html .group { zoom: 1; }
+
+/* IE7 */
+
+/*----------------------------------
+|************ UI Styles ***********|
+-----------------------------------*/
+
+.ui-body {
+	background: #fff;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	padding-top: 20px;
+	padding-bottom: 10px;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box; /* Firefox, other Gecko */
+	box-sizing: border-box; /* Opera/IE 8+ */
+	box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.15);
+	-webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.15);
+	-moz-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.15);
+	border-radius: 4px 4px 0 0;
+}
+
+.ui-body#top-bar {
+	bottom: auto !important;
+	padding: 10px 0 0 0 !important;
+	top: 0 !important;
+	border-radius: 0 !important;
+}
+
+.btn-wrp { clear: both; height: 28px; }
+
+.ui-body label, .ui-body input {
+	color: #4e5f71;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 14px;
+}
+
+.ui-body label { float: left; padding: 7px 0; }
+
+/*------- Tooltip --------*/
+.ui-body.tooltip {
+	border-radius: 4px !important;
+	bottom: auto !important;
+	top: 0;
+}
+
+/*------- Minimize --------*/
+.minimized {
+	height: 0;
+	overflow: hidden;
+}
+
+#top-bar #minimize {
+	bottom: 0;
+	display: block;
+	height: 5px;
+	margin: 2px;
+	padding: 6px 8px;
+	position: absolute;
+	right: 0;
+	width: 8px;
+}
+#top-bar #minimize.close{ background: rgba(0, 0, 0, 0) url("../img/minimize.png") no-repeat scroll center center; }
+#top-bar #minimize.open{
+	background: rgba(0, 0, 0, 0) url("../img/maximize.png") no-repeat scroll center center;
+}
+#top-bar #minimize:hover { cursor: pointer; }
+
+/*------- Checkbox --------*/
+/* might not need since that is the switch... */
+
+/*------- Text / Number Inputs --------*/
+.ui-body input[type=text], .ui-body input[type=number] {
+	/* padding: 6px 28px 6px 10px;	for custom number input */
+	padding: 6px 10px;
+	text-align: right;
+	border: solid 1px #dfdfe7;
+	border-radius: 3px;
+	width: 65%;
+	float: left;
+	clear: left;
+	-webkit-transition: border 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+	-moz-transition: border 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+	transition: border 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.ui-body input[type="text"]:focus, .ui-body input[type=number]:focus {
+	border: 1px solid rgba(33, 206, 198, 0.5);
+	box-shadow: 0 0 3px rgba(33, 206, 198, 0.3);
+}
+
+/*------- Select --------*/
+
+select {
+	border: 1px solid #dfdfe7;
+	padding-right: 38px;
+	border-radius: 3px;
+	text-align: right;
+	transition: border 0.3s ease-in-out 0s, box-shadow 0.3s ease-in-out 0s;
+	width: 65%;
+	float: left;
+	cursor: pointer;
+	height: 28px;
+	clear: left;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	background: url('../img/dropdown_arrow.png') no-repeat center right;
+	direction: rtl;
+}
+
+/* removes dotted border in firefox */
+select:-moz-focusring {
+	color: transparent;
+	text-shadow: 0 0 0 #000;
+}
+
+option {
+	padding: 6px 38px 6px 10px;
+	-webkit-appearance: none;
+}
+
+/*------- Switch --------*/
+
+.ui-body .switch-input { display: none; }
+
+.ui-body .switch:hover { cursor: pointer; }
+
+.ui-body .switch {
+	border-radius: 9px;
+	float: right;
+	margin: 5px 0 5px 25px;
+	overflow: hidden;
+	position: relative;
+}
+
+.ui-body .switch .switch-bg {
+	height: 18px;
+	width: 35px;
+	-webkit-transition: background-color 0.2s ease;
+	-moz-transition: background-color 0.2s ease;
+	transition: background-color 0.2s ease;
+}
+
+.ui-body .switch.off .switch-bg { background-color: #dfdfe7; }
+
+.ui-body .switch.on .switch-bg { background-color: #21cec6; }
+
+.ui-body .switch .switch-knob {
+	background: #fff none repeat scroll 0 0;
+	height: 16px;
+	position: absolute;
+	top: 1px;
+	width: 16px;
+	border-radius: 8px;
+	-webkit-transition: left 0.15s ease-in-out;
+	-moz-transition: left 0.15s ease-in-out;
+	transition: left 0.15s ease-in-out;
+}
+
+.ui-body .switch.off .switch-knob { left: 1px; }
+
+.ui-body .switch.on .switch-knob { left: 18px; }
+
+/*------- Range --------*/
+
+.ui-body .range {
+	display: block;
+	float: left;
+	clear: left;
+	position: relative;
+	width: 100%;
+}
+
+.ui-body input[type="range"] {
+	margin: 0;
+	position: relative;
+	width: 100%;
+	z-index: 100;
+	-webkit-appearance: none;
+	background: rgba(1, 1, 1, 0);
+}
+
+input[type=range]::-moz-focus-outer { border: 0; }
+
+input[type=range]:focus { outline: none; }
+
+.ui-body input[type=range]::-moz-range-thumb {
+	border: solid 2px #21cec6;
+	height: 14px;
+	width: 14px;
+	border-radius: 50%;
+	background: #fff;
+	cursor: pointer;
+	-webkit-box-shadow: -1px 1px 5px 0 rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: -1px 1px 5px 0 rgba(0, 0, 0, 0.2);
+	box-shadow: -1px 1px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Special styling for WebKit/Blink */
+input[type=range]::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	border: solid 2px #21cec6;
+	height: 18px;
+	width: 18px;
+	border-radius: 50%;
+	background: #fff;
+	cursor: pointer;
+	-webkit-box-shadow: -1px 1px 5px 0 rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: -1px 1px 5px 0 rgba(0, 0, 0, 0.2);
+	box-shadow: -1px 1px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.ui-body input[type=range]::-moz-range-track { visibility: hidden; }
+
+.ui-body input[type=range]::-webkit-slider-runnable-track { -webkit-appearance: none; background: rgba(1, 1, 1, 0); }
+
+.ui-body .track-bg {
+	background: #dfdfe7 none repeat scroll 0 0;
+	border-radius: 3px;
+	height: 6px;
+	margin-top: 6px;
+	position: absolute;
+	width: 100%;
+	z-index: 0;
+	overflow: hidden;
+}
+
+.ui-body .track {
+	background: #21cec6 none repeat scroll 0 0;
+	height: 6px;
+	width: 50%;
+}
+
+p.range-text { margin: 0; text-align: center; }
+
+/*------- Separator --------*/
+
+.ui-body hr {
+	-moz-border-bottom-colors: none;
+	-moz-border-left-colors: none;
+	-moz-border-right-colors: none;
+	-moz-border-top-colors: none;
+
+	-webkit-border-bottom-colors: none;
+	-webkit-border-left-colors: none;
+	-webkit-border-right-colors: none;
+	-webkit-border-top-colors: none;
+
+	border-color: rgba(0, 0, 0, 0.05) -moz-use-text-color rgba(255, 255, 255, 0.3);
+	border-image: none;
+	border-style: solid none;
+	border-width: 1px 0;
+	height: 0;
+	margin: 2px 0 12px 0;
+}
+
+
+/*------- Canvas, Formulas, Up / Down Buttons -------*/
+.ui-body .formulas { background: #dedee6; padding: 15px 15px 10px; }
+.ui-body .formula { height: 30px; position: relative; }
+.ui-body .formula label { float: none; line-height: 1.2; font-weight: 700; }
+
+.sine-wave-canvas { pointer-events: none; }
+.sine-wave-canvas.wave-1 { position: relative; top: 50px; }
+.sine-wave-canvas.wave-2 { position: relative; top: 48px; }
+.sine-wave-canvas.wave-3 { position: relative; top: 50px; }
+
+.ui-body .formula .wave-lbl,
+.formula .wave-lbl { position: relative; top: -25px; left: 15px; padding: 5px 15px; cursor: pointer;}
+.ui-body .formula.wave-lbl-1,
+.formula .wave-lbl.wave-lbl-1 { color: rgb(210, 124, 121); }
+.ui-body .formula.wave-lbl-2,
+.formula .wave-lbl.wave-lbl-2 { color: rgb(51, 102, 153); }
+.ui-body .formula .wave-lbl-3,
+.formula .wave-lbl.wave-lbl-3 { color: rgb(60, 179, 113); }
+
+.formula .wave-lbl.wave-lbl-1:hover {
+	background: rgba(210, 124, 121, 0.7);
+	border-radius: 15px;
+	color: #f5f5f5;
+	z-index: 100;
+}
+.formula .wave-lbl.wave-lbl-2:hover {
+	background: rgba(51, 102, 153, 0.7);
+	border-radius: 15px;
+	color: #f5f5f5;
+	z-index: 100;
+}
+.formula .wave-lbl.wave-lbl-3:hover {
+	background: rgba(60, 179, 113, 0.7);
+	border-radius: 15px;
+	color: #f5f5f5;
+	z-index: 100;
+}
+
+.row.button-row {
+	padding: 0;
+	margin: 0;
+	position: relative;
+}
+.row.button-row [class*='col-'] {
+	padding: 0;
+	margin: 0;
+}
+.btn { cursor: pointer; }
+
+button.btn {
+	background: #fff none repeat scroll 0 0;
+	border: 2px solid #4e5f71;
+	border-radius: 3px;
+	box-sizing: border-box;
+	color: #4e5f71;
+	display: block;
+	font-size: 14px;
+	margin: 0px auto;
+	padding: 5px 10px;
+	position: relative;
+	text-transform: uppercase;
+	width: 95%;
+
+	box-shadow: -1px 1px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+button.btn.active{
+	border: 2px solid #21cec6;
+	-webkit-box-shadow: inset 1px 1px 3px 0px rgba(0,0,0,0.3);
+	-moz-box-shadow: inset 1px 1px 3px 0px rgba(0,0,0,0.3);
+	box-shadow: inset 1px 1px 3px 0px rgba(0,0,0,0.3);
+}
+
+button.btn:active {
+	border: 2px solid #21cec6;
+	-webkit-box-shadow: inset 1px 1px 3px 0px rgba(0,0,0,0.3);
+	-moz-box-shadow: inset 1px 1px 3px 0px rgba(0,0,0,0.3);
+	box-shadow: inset 1px 1px 3px 0px rgba(0,0,0,0.3);
+}
+button.btn:active, .btn:active.icon-up-2::before, .btn:active.icon-down-2::before {
+	color: #21cec6!important;
+
+}
+button.btn:hover {
+	background: #fafafa;
+}
+.btn.icon-up-2::before, .btn.icon-down-2::before {
+	color: #4e5f71;
+	font-size: 24px;
+	left: -9px;
+	line-height: 12px;
+	margin-right: -9px;
+	position: relative;
+	top: 3px;
+}
+
+/*------- END Canvas, Formulas, Up / Down Buttons -------*/
+
+.row hr { margin: 12px 0 2px !important; }
+
+/*----------------------------------
+|			GRID SYSTEM
+-----------------------------------*/
+/*
+  Simple Grid
+  Project Page - http://thisisdallas.github.com/Simple-Grid/
+  Author - Dallas Bass
+  Site - http://ninenineteen.co
+*/
+
+*, *:after, *:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body { margin: 0; }
+
+[class*='col-'] {
+	float: left;
+	min-height: 1px;
+	padding-right: 20px; /* column-space */
+}
+
+.row {
+	width: 100%;
+	max-width: 1140px;
+	/* min-width: 748px;*/ /* when using padded grid on ipad in portrait mode, width should be viewport-width - padding = (768 - 20) = 748. actually, it should be even smaller to allow for padding of grid containing element */
+	margin: 0 auto;
+	overflow: hidden;
+	padding-bottom: 10px;
+	padding-left: 20px; /* grid-space to left */
+	padding-right: 0; /* grid-space to right: (grid-space-left - column-space) e.g. 20px-20px=0 */
+}
+
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.push-right { float: right; }
+
+/* Content Columns */
+
+.col-1-1 { width: 100%; }
+
+.col-2-3, .col-8-12 { width: 66.66%; }
+
+.col-1-2, .col-6-12 { width: 50%; }
+
+.col-1-3, .col-4-12 { width: 33.33%; }
+
+.col-1-4, .col-3-12 { width: 25%; }
+
+.col-1-5 { width: 20%; }
+
+.col-1-6, .col-2-12 { width: 16.667%; }
+
+.col-1-7 { width: 14.28%; }
+
+.col-1-8 { width: 12.5%; }
+
+.col-1-9 { width: 11.1%; }
+
+.col-1-10 { width: 10%; }
+
+.col-1-11 { width: 9.09%; }
+
+.col-1-12 { width: 8.33% }
+
+/* Layout Columns */
+
+.col-11-12 { width: 91.66% }
+
+.col-10-12 { width: 83.333%; }
+
+.col-9-12 { width: 75%; }
+
+.col-5-12 { width: 41.66%; }
+
+.col-7-12 { width: 58.33% }
+
+/* Pushing blocks */
+
+.push-2-3, .push-8-12 { margin-left: 66.66%; }
+
+.push-1-2, .push-6-12 { margin-left: 50%; }
+
+.push-1-3, .push-4-12 { margin-left: 33.33%; }
+
+.push-1-4, .push-3-12 { margin-left: 25%; }
+
+.push-1-5 { margin-left: 20%; }
+
+.push-1-6, .push-2-12 { margin-left: 16.667%; }
+
+.push-1-7 { margin-left: 14.28%; }
+
+.push-1-8 { margin-left: 12.5%; }
+
+.push-1-9 { margin-left: 11.1%; }
+
+.push-1-10 { margin-left: 10%; }
+
+.push-1-11 { margin-left: 9.09%; }
+
+.push-1-12 { margin-left: 8.33% }
+
+/*	REMOVED MOBILE AND TABLET RESPONSIVE LAYOUT
+	
+	
+@media handheld, only screen and (max-width: 767px) {
+	.row {
+		width: 100%;
+		min-width: 0;
+		margin-left: 0;
+		margin-right: 0;
+		padding-left: 20px; 
+		padding-right: 10px; 
+	}
+
+	[class*='col-'] {
+		width: auto;
+		float: none;
+		margin: 10px 0;
+		padding-left: 0;
+		padding-right: 10px; 
+	}
+*/
+/* Mobile Layout */
+/*
+	[class*='mobile-col-'] {
+		float: left;
+		margin: 0 0 10px;
+		padding-left: 0;
+		padding-right: 10px; 
+		padding-bottom: 0;
+	}
+
+	.mobile-col-1-1 {
+		width: 100%;
+	}
+	.mobile-col-2-3, .mobile-col-8-12 {
+		width: 66.66%;
+	}
+
+	.mobile-col-1-2, .mobile-col-6-12 {
+		width: 50%;
+	}
+
+	.mobile-col-1-3, .mobile-col-4-12 {
+		width: 33.33%;
+	}
+
+	.mobile-col-1-4, .mobile-col-3-12 {
+		width: 25%;
+	}
+
+	.mobile-col-1-5 {
+		width: 20%;
+	}
+
+	.mobile-col-1-6, .mobile-col-2-12 {
+		width: 16.667%;
+	}
+
+	.mobile-col-1-7 {
+		width: 14.28%;
+	}
+
+	.mobile-col-1-8 {
+		width: 12.5%;
+	}
+
+	.mobile-col-1-9 {
+		width: 11.1%;
+	}
+
+	.mobile-col-1-10 {
+		width: 10%;
+	}
+
+	.mobile-col-1-11 {
+		width: 9.09%;
+	}
+
+	.mobile-col-1-12 {
+		width: 8.33%
+	}
+/*
+	/* Layout Columns */
+/*
+	.mobile-col-11-12 {
+		width: 91.66%
+	}
+
+	.mobile-col-10-12 {
+		width: 83.333%;
+	}
+
+	.mobile-col-9-12 {
+		width: 75%;
+	}
+
+	.mobile-col-5-12 {
+		width: 41.66%;
+	}
+
+	.mobile-col-7-12 {
+		width: 58.33%
+	}
+
+	.hide-on-mobile {
+		display: none !important;
+		width: 0;
+		height: 0;
+	}
+}*/
+

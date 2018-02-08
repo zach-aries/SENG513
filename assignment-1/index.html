@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Stylesheets -->
+
+        <link rel="stylesheet" href="css/styles.css" />
+
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lobster|VT323" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Raleway:400,600" rel="stylesheet">
+
+        <title>Zach Aries</title>
+    </head>
+    <body class="big-header">
+        <header>
+            <!-- Fixed navbar -->
+            <nav id="nav-top" class="nav-main">
+                <div class="nav-main-brand">
+                    <a href="#">Za</a>
+                </div>
+                <a class="exp-menu" onclick="toggleNavMenu('main-menu')">
+                    <div class="hamburger" href="#">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="circle"></div>
+                </a>
+                <ul id="main-menu" class="nav-navbar closed">
+                    <li class="item active">
+                        <a href="#">Home</a>
+                    </li>
+                    <li class="item">
+                        <a href="pages/portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="item">
+                        <a href="pages/resume.html">Resume</a>
+                    </li>
+                    <li class="exit">
+                        <a href="javascript:;" onclick="toggleNavMenu('main-menu');return false;">
+                            <span></span>
+                            <span class="sec"></span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="billboard">
+            <h1>Zach Aries</h1>
+            <h2>Software Developer</h2>
+            <p class="lead">Hello &amp; welcome to my website! I am a developer, designer, and I built this portfolio in order to showcase a bit of what I can do. Please take a look around and feel free to contact me for work, questions or to meet for a coffee and talk shop.</p>
+            <p class="lead">Make sure to take a look at some of my <a href="pages/portfolio.html">work!</a></p>
+        </div>
+
+        <!-- Begin page content -->
+        <main role="main">
+            <div class="container" style="margin-bottom: 5em;">
+                <h1 class="fancy">First, solve the problem.
+                    <br><span style="font-weight: 700; margin-left: 2em;">Then write the code.</span>
+                </h1>
+                <p style="border-bottom: solid 1px rgba(0,0,0,0.3); padding-bottom: 2em; margin-bottom: 4em;">John Johnson</p>
+                <div class="row">
+                    <div class="col-md-6 no-pad">
+                        <div class="front-cta">
+                            <h2 style="color: #fff; background: #252525;">Developer</h2>
+                            <img src="img/developer.png" title="developer" />
+                        </div>
+                    </div>
+                    <div class="col-md-6 no-pad">
+                        <div class="front-cta">
+                            <h2 style="color: #fff; background: #865274;">Designer</h2>
+                            <img src="img/designer.png" title="designer" />
+                        </div>
+                        <div class="front-cta">
+                            <h2 style="background: #6597d2; color: #f0f2fa;">Adventurer</h2>
+                            <img src="img/adventurer.jpg" title="adventurer" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <footer>
+                <div class="container">
+                    <p class="social-media">
+                        <a href="https://github.com/zach-aries" target="_blank">GitHub</a> /
+                        <a href="https://linkedin.com/in/zacharies/" target="_blank">LinkedIn</a> /
+                        <a href="https://goo.gl/forms/SmbDqcFAaxZShf0H3" target="_blank">Contact Me</a>
+                    </p>
+                </div>
+            </footer>
+        </main>
+
+
+
+        <!-- Javascript Includes -->
+        <script src="js/main.js"></script>
+    </body>
+</html>
